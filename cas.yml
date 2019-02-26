@@ -1,0 +1,14 @@
+production:
+  frontend:
+    sso_name: 'CASino'
+    footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
+  authenticators:
+    comprojects_dev_ldap:
+      authenticator: 'LDAP'
+      options:
+        host: ldap
+        port: 10389
+        base: 'ou=system'
+        username_attribute: 'uid'
+        extra_attributes:
+          email: 'mail' # need this to avoid an issue calling .values on nil
