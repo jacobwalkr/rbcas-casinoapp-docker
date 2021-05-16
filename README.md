@@ -1,7 +1,5 @@
 # rbcas-casinoapp-docker
-A Docker image for a running the rbCAS CASinoApp
-
-Relies on [rbCAS/CASinoApp](https://github.com/rbCAS/CASinoApp).
+A Docker image for a running the [rbCAS/CASinoApp](https://github.com/rbCAS/CASinoApp).
 
 Expects an LDAP service hostname in $LDAP_HOST. I use it in Docker Compose:
 
